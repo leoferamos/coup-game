@@ -1,0 +1,10 @@
+[
+  {
+    "id": "welcome_message",
+    "translation": "Bem-vindo ao Jogo Coup!"
+  },
+  {
+    "id": "waiting_for_players",
+    "translation": "Aguardando jogadores entrarem..."
+  }
+]

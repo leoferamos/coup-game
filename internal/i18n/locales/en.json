@@ -1,0 +1,10 @@
+[
+  {
+    "id": "welcome_message",
+    "translation": "Welcome to Coup Game!"
+  },
+  {
+    "id": "waiting_for_players",
+    "translation": "Waiting for players to join..."
+  }
+]
