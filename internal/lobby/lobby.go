@@ -14,9 +14,9 @@ type Player struct {
 
 // Room represents a game room
 type Room struct {
-	Code       string   `json:"code"`
-	Players    []Player `json:"players"`
-	MaxPlayers int      `json:"maxPlayers"`
+	Code       string    `json:"code"`
+	Players    []Player  `json:"players"`
+	MaxPlayers int       `json:"maxPlayers"`
 	CreatedAt  time.Time `json:"createdAt"`
 }
 
@@ -25,7 +25,7 @@ func CreateRoom() *Room {
 	return &Room{
 		Code:       generateRoomCode(),
 		Players:    make([]Player, 0),
-		MaxPlayers: 10, // Maximum players for Coup expansion
+		MaxPlayers: 10,
 		CreatedAt:  time.Now(),
 	}
 }
@@ -33,7 +33,7 @@ func CreateRoom() *Room {
 // generateRoomCode generates a 4-digit numeric code
 func generateRoomCode() string {
 	rand.Seed(time.Now().UnixNano())
-	code := rand.Intn(10000) // 0-9999
+	code := rand.Intn(10000)         // 0-9999
 	return fmt.Sprintf("%04d", code) // Ensure 4 digits with leading zeros
 }
 
@@ -43,14 +43,14 @@ func (r *Room) AddPlayer(player Player) error {
 	if len(r.Players) >= r.MaxPlayers {
 		return fmt.Errorf("room is full, maximum %d players allowed", r.MaxPlayers)
 	}
-	
+
 	// Check for duplicate player ID
 	for _, existingPlayer := range r.Players {
 		if existingPlayer.ID == player.ID {
 			return fmt.Errorf("player with ID %s already exists in room", player.ID)
 		}
 	}
-	
+
 	// Add player to room
 	r.Players = append(r.Players, player)
 	return nil
@@ -65,7 +65,7 @@ func (r *Room) RemovePlayer(playerID string) error {
 			return nil
 		}
 	}
-	
+
 	return fmt.Errorf("player with ID %s not found in room", playerID)
 }
 
@@ -91,7 +91,7 @@ func CalculateCardsPerInfluence(playerCount int) int {
 	} else if playerCount >= 9 && playerCount <= 10 {
 		return 5 // 5 of each for 9-10 players
 	}
-	
+
 	// Default to 3 for invalid player counts
 	return 3
 }
