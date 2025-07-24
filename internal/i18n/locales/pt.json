@@ -6,5 +6,73 @@
   {
     "id": "waiting_for_players",
     "translation": "Aguardando jogadores entrarem..."
+  },
+  {
+    "id": "players_connected",
+    "translation": "{{.Count}} jogadores conectados"
+  },
+  {
+    "id": "game_started",
+    "translation": "Jogo iniciado! Você tem {{.Coins}} moedas."
+  },
+  {
+    "id": "your_turn",
+    "translation": "É sua vez de jogar!"
+  },
+  {
+    "id": "action_income",
+    "translation": "{{.Player}} pegou 1 moeda (Income)"
+  },
+  {
+    "id": "action_foreign_aid",
+    "translation": "{{.Player}} pegou 2 moedas (Foreign Aid)"
+  },
+  {
+    "id": "action_coup",
+    "translation": "{{.Player}} deu coup em {{.Target}}"
+  },
+  {
+    "id": "action_tax",
+    "translation": "{{.Player}} coletou 3 moedas (Tax - Duke)"
+  },
+  {
+    "id": "action_assassinate",
+    "translation": "{{.Player}} assassinou {{.Target}} (Assassin)"
+  },
+  {
+    "id": "action_exchange",
+    "translation": "{{.Player}} trocou cartas (Ambassador)"
+  },
+  {
+    "id": "action_steal",
+    "translation": "{{.Player}} roubou 2 moedas de {{.Target}} (Captain)"
+  },
+  {
+    "id": "challenge_success",
+    "translation": "Desafio bem-sucedido! {{.Player}} não tinha a carta alegada."
+  },
+  {
+    "id": "challenge_failed",
+    "translation": "Desafio falhou! {{.Player}} tinha a carta alegada."
+  },
+  {
+    "id": "player_eliminated",
+    "translation": "{{.Player}} foi eliminado do jogo!"
+  },
+  {
+    "id": "game_winner",
+    "translation": "{{.Player}} venceu o jogo!"
+  },
+  {
+    "id": "insufficient_coins",
+    "translation": "Moedas insuficientes para esta ação"
+  },
+  {
+    "id": "invalid_action",
+    "translation": "Ação inválida"
+  },
+  {
+    "id": "not_your_turn",
+    "translation": "Não é sua vez de jogar"
   }
 ]

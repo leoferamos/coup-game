@@ -6,5 +6,73 @@
   {
     "id": "waiting_for_players",
     "translation": "Waiting for players to join..."
+  },
+  {
+    "id": "players_connected",
+    "translation": "{{.Count}} players connected"
+  },
+  {
+    "id": "game_started",
+    "translation": "Game started! You have {{.Coins}} coins."
+  },
+  {
+    "id": "your_turn",
+    "translation": "It's your turn to play!"
+  },
+  {
+    "id": "action_income",
+    "translation": "{{.Player}} took 1 coin (Income)"
+  },
+  {
+    "id": "action_foreign_aid",
+    "translation": "{{.Player}} took 2 coins (Foreign Aid)"
+  },
+  {
+    "id": "action_coup",
+    "translation": "{{.Player}} coup'd {{.Target}}"
+  },
+  {
+    "id": "action_tax",
+    "translation": "{{.Player}} collected 3 coins (Tax - Duke)"
+  },
+  {
+    "id": "action_assassinate",
+    "translation": "{{.Player}} assassinated {{.Target}} (Assassin)"
+  },
+  {
+    "id": "action_exchange",
+    "translation": "{{.Player}} exchanged cards (Ambassador)"
+  },
+  {
+    "id": "action_steal",
+    "translation": "{{.Player}} stole 2 coins from {{.Target}} (Captain)"
+  },
+  {
+    "id": "challenge_success",
+    "translation": "Challenge successful! {{.Player}} didn't have the claimed card."
+  },
+  {
+    "id": "challenge_failed",
+    "translation": "Challenge failed! {{.Player}} had the claimed card."
+  },
+  {
+    "id": "player_eliminated",
+    "translation": "{{.Player}} has been eliminated from the game!"
+  },
+  {
+    "id": "game_winner",
+    "translation": "{{.Player}} won the game!"
+  },
+  {
+    "id": "insufficient_coins",
+    "translation": "Insufficient coins for this action"
+  },
+  {
+    "id": "invalid_action",
+    "translation": "Invalid action"
+  },
+  {
+    "id": "not_your_turn",
+    "translation": "It's not your turn to play"
   }
 ]
